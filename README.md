@@ -1,4 +1,4 @@
-# express.js 서버와 react 시작하기
+# React App on Express Server
 ## node project 생성
 ```
 npm init
@@ -11,11 +11,13 @@ npm install
 - express
 - react
 - react-dom
-- abel-preset-es2015
-- abel-preset-react
+- babel-core
+- babel-loader
+- babel-preset-es2015
+- babel-preset-react
 
 ## babel 컴파일
-es6문법으로 작성된 코드를 es5문법으로 컴파일합니다.
+es6문법으로 작성된 코드를 es5문법으로 컴파일한다.
 ```
 babel server -d build
 ```
@@ -36,7 +38,7 @@ node build/main.js
 ├── server                  # 서버 디렉토리 (ES6)
 │    ├── main.js            # 서버 사이드 메인 스크립트
 │    └── routes
-│        └── posts.js       # 예제 라우터
+│        └── posts.js       # 라우터
 ├── src
 │    ├── App.js             # App 컴포넌트
 │    └── index.js           # 클라이언트 사이드 메인 스크립트

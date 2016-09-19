@@ -13,13 +13,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var app = (0, _express2.default)();
 var port = 3000;
 
-app.use('/', _express2.default.static(__dirname + '/../public'));
+app.use('/', _express2.default.static(__dirname + './../public'));
 app.use('/hello', function (req, res) {
-	return res.send('hello~');
+	return res.send('hello~^^');
 });
 
 app.use('/posts', _posts2.default);
 
 var server = app.listen(port, function () {
-	console.log('serer start! port is ' + port);
+	console.log('server start');
 });
