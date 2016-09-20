@@ -1,8 +1,4 @@
 # React App on Express Server
-## node project 생성
-```
-npm init
-```
 
 ## 모듈 설치
 ```
@@ -35,7 +31,7 @@ node build/main.js
 http://localshot:3000/
 ```
 
-## 한방에 실행하기 (npm scripts)
+## npm으로 한방에 실행하기 (npm scripts)
 ```
 npm run clean
 npm run build
