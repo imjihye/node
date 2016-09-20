@@ -15,6 +15,9 @@ npm install
 - babel-loader
 - babel-preset-es2015
 - babel-preset-react
+- react-hot-loader
+- webpack
+- webpack-dev-server
 
 ## babel 컴파일
 es6문법으로 작성된 코드를 es5문법으로 컴파일한다.
@@ -36,8 +39,15 @@ http://localshot:3000/
 ```
 npm run clean
 npm run build
-npm run start
+npm run start or npm run development
 ```
+
+## 환경에 따라 실행하기
+- 프러덕션 환경 : npm run start (http://localhost:3000)
+- 개발 환경 : npm run development (http://localhost:8123)
+
+참고) 개발환경은 react-hot-loader를 사용하여 변경사항에 실시간으로 적용되도록 하였다.
+
 
 ## Directory
 ```
@@ -55,7 +65,7 @@ npm run start
 │    ├── App.js             # App 컴포넌트
 │    └── index.js           # 클라이언트 사이드 메인 스크립트
 ├── webpack.config.js       # webpack 설정파일
-└── webpack.dev.config.js   # webpack-dev-server를 위한 설정파일
+└── webpack.dev.config.js   # webpack-dev-server를 위한 설정파일(개발 전용)
 ```
 
 
