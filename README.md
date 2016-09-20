@@ -32,9 +32,11 @@ node build/main.js
 http://localshot:3000/
 ```
 
-## 한방에 실행하기
+## 한방에 실행하기 (npm scripts)
 ```
-npm run
+npm run clean
+npm run build
+npm run start
 ```
 
 ## Directory
